@@ -90,11 +90,11 @@ public class Utente {
 		return "Utente [nome=" + nome + ", genero=" + genero + ", idade=" + idade + ", peso=" + peso + ", altura=" + altura + "]";
 	}
 
-	public static int calcularIMC(int peso, int altura) {
-		int imc = peso/(altura*altura);
-		return imc;
-    }
-	
-	public static String imprimirIMC(imc) {
-		System.out.print("The IMC is" + imc);
+	public float calcularIMC() {
+	       return peso / (altura * altura);
 	}
+
+	public void imprimirIMC() {
+		System.out.println("The IMC of" + nome + "is" + calcularIMC());
+	}
+}

@@ -84,6 +84,12 @@ public class Utente {
 	public void setAltura(float altura) {
 		this.altura = altura;
 	}
+
+	@Override
+	public String toString() {
+		return "Utente [nome=" + nome + ", genero=" + genero + ", idade=" + idade + ", peso=" + peso + ", altura=" + altura + "]";
+	}
+
 	
 	
 }

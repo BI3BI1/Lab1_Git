@@ -22,12 +22,13 @@ public class Utente {
 	 * @param altura
 	 */
 	
-	public Utente(int idade, int peso, float altura) {
-		super();
-		this.setIdade(idade);
-		this.setPeso(peso);
-		this.setAltura(altura);
-	}
+	public Utente(String nome, String genero, int idade, float altura, int peso) {
+		this.nome = nome;
+		this.genero = genero;
+		this.idade = idade;
+		this.peso = peso;
+		this.altura = altura;
+	}	
 
 	/**
 	 * @return the nome
